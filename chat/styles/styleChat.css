@@ -33,4 +33,7 @@ form
 {
     height: 20%;
     margin: 0px auto;
+    
+    display: flex;
+    flex-direction: row;
 }

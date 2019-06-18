@@ -13,8 +13,8 @@
     <iframe src="messages.php">
     </iframe>
     
-    <form action="send.php" method="POST">
-        <input id="text" type="text" name="text" placeholder="Введите сообщение">
+    <form action="send.php" method="POST" id="textAndSend">
+        <textarea name="text"></textarea>
         <input id="send" type="submit"> 
     </form>    
 </body>
