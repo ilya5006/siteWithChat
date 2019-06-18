@@ -2,10 +2,10 @@
 -- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1:3306
--- Время создания: Май 12 2019 г., 19:54
--- Версия сервера: 8.0.15
--- Версия PHP: 7.2.10
+-- Хост: 127.0.0.1:3309
+-- Время создания: Июн 18 2019 г., 11:16
+-- Версия сервера: 5.7.19
+-- Версия PHP: 7.1.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -30,13 +30,13 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `administrations` (
   `id_administration` int(11) NOT NULL,
-  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `name` varchar(50) NOT NULL,
   `birth` date NOT NULL,
-  `number` varchar(12) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `number` varchar(12) NOT NULL,
   `id_role` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
   `id_classroom` int(11) NOT NULL,
-  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+  `email` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -55,7 +55,7 @@ INSERT INTO `administrations` (`id_administration`, `name`, `birth`, `number`, `
 
 CREATE TABLE `classrooms` (
   `id_classroom` int(11) NOT NULL,
-  `name` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+  `name` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -77,9 +77,9 @@ INSERT INTO `classrooms` (`id_classroom`, `name`) VALUES
 
 CREATE TABLE `courses` (
   `id_course` int(11) NOT NULL,
-  `name` varchar(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `duration` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `price` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `name` varchar(25) NOT NULL,
+  `duration` varchar(10) NOT NULL,
+  `price` varchar(10) NOT NULL,
   `id_teacher` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -99,10 +99,10 @@ INSERT INTO `courses` (`id_course`, `name`, `duration`, `price`, `id_teacher`) V
 
 CREATE TABLE `events` (
   `id_event` int(11) NOT NULL,
-  `name` varchar(35) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `place` varchar(35) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `name` varchar(35) NOT NULL,
+  `place` varchar(35) NOT NULL,
   `date` date NOT NULL,
-  `duration` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `duration` varchar(10) NOT NULL,
   `id_teacher` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -122,10 +122,10 @@ INSERT INTO `events` (`id_event`, `name`, `place`, `date`, `duration`, `id_teach
 
 CREATE TABLE `groups` (
   `id_group` int(11) NOT NULL,
-  `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `name` varchar(45) NOT NULL,
   `id_speciality` int(11) NOT NULL,
   `enrollment` date NOT NULL,
-  `formstudy` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `formstudy` varchar(10) NOT NULL,
   `id_classroom` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -142,6 +142,32 @@ INSERT INTO `groups` (`id_group`, `name`, `id_speciality`, `enrollment`, `formst
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `messagesall`
+--
+
+CREATE TABLE `messagesall` (
+  `id_message` int(11) NOT NULL,
+  `text` text NOT NULL,
+  `userName` varchar(50) NOT NULL,
+  `userRole` varchar(15) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `messagesall`
+--
+
+INSERT INTO `messagesall` (`id_message`, `text`, `userName`, `userRole`, `date`) VALUES
+(1, 'gege', 'Попов Александр Дмитриевич', 'Студент', '2019-06-18'),
+(2, 'pffprgh h', 'Попов Александр Дмитриевич', 'Студент', '2019-06-18'),
+(3, 'ghdrtshjortib hjrtbohdrtbyhnotvgrueihvgnirueslgvre', 'Попов Александр Дмитриевич', 'Студент', '2019-06-18'),
+(4, 'ghdrtshjortib hjrtbohdrtbyhnotvgrueihvgnirueslgvregrhrthjortihjrtohijortijhortihj', 'Попов Александр Дмитриевич', 'Студент', '2019-06-18'),
+(5, 'rtetete', 'Попов Александр Дмитриевич', 'Студент', '2019-06-18'),
+(6, 'Ооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооо', 'Попов Александр Дмитриевич', 'Студент', '2019-06-18');
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `news`
 --
 
@@ -151,7 +177,7 @@ CREATE TABLE `news` (
   `textmin` text NOT NULL,
   `textfull` text NOT NULL,
   `date` date NOT NULL,
-  `imageurl` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+  `imageurl` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -170,7 +196,7 @@ INSERT INTO `news` (`id_news`, `title`, `textmin`, `textfull`, `date`, `imageurl
 
 CREATE TABLE `roles` (
   `id_role` int(11) NOT NULL,
-  `name` varchar(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+  `name` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -190,8 +216,8 @@ INSERT INTO `roles` (`id_role`, `name`) VALUES
 
 CREATE TABLE `specialities` (
   `id_speciality` int(11) NOT NULL,
-  `name` varchar(35) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `learnperiod` varchar(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+  `name` varchar(35) NOT NULL,
+  `learnperiod` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -210,10 +236,10 @@ INSERT INTO `specialities` (`id_speciality`, `name`, `learnperiod`) VALUES
 
 CREATE TABLE `students` (
   `id_student` int(11) NOT NULL,
-  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `name` varchar(50) NOT NULL,
   `id_group` int(11) NOT NULL,
   `birth` date NOT NULL,
-  `number` varchar(12) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `number` varchar(12) NOT NULL,
   `id_role` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
   `email` varchar(50) NOT NULL
@@ -235,7 +261,7 @@ INSERT INTO `students` (`id_student`, `name`, `id_group`, `birth`, `number`, `id
 
 CREATE TABLE `subjects` (
   `id_subject` int(11) NOT NULL,
-  `name` varchar(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `name` varchar(25) NOT NULL,
   `id_speciality` int(11) NOT NULL,
   `id_teacher` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -257,13 +283,13 @@ INSERT INTO `subjects` (`id_subject`, `name`, `id_speciality`, `id_teacher`) VAL
 
 CREATE TABLE `teachers` (
   `id_teacher` int(11) NOT NULL,
-  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `name` varchar(50) NOT NULL,
   `birth` date NOT NULL,
-  `number` varchar(12) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `number` varchar(12) NOT NULL,
   `id_role` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
   `id_classroom` int(11) NOT NULL,
-  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+  `email` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -305,9 +331,9 @@ INSERT INTO `tutorials` (`id_tutorial`, `name`, `author`, `type`, `id_subject`, 
 
 CREATE TABLE `users` (
   `id_user` int(11) NOT NULL,
-  `login` varchar(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `email` varchar(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `password` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `login` varchar(15) NOT NULL,
+  `email` varchar(25) NOT NULL,
+  `password` varchar(20) NOT NULL,
   `id_role` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -363,6 +389,12 @@ ALTER TABLE `groups`
   ADD PRIMARY KEY (`id_group`),
   ADD KEY `id_speciality` (`id_speciality`),
   ADD KEY `id_classroom` (`id_classroom`);
+
+--
+-- Индексы таблицы `messagesall`
+--
+ALTER TABLE `messagesall`
+  ADD PRIMARY KEY (`id_message`);
 
 --
 -- Индексы таблицы `news`
@@ -456,6 +488,12 @@ ALTER TABLE `events`
 --
 ALTER TABLE `groups`
   MODIFY `id_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT для таблицы `messagesall`
+--
+ALTER TABLE `messagesall`
+  MODIFY `id_message` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT для таблицы `news`
