@@ -15,7 +15,7 @@
     
     <form action="send.php" method="POST" id="textAndSend">
         <textarea name="text"></textarea>
-        <input id="send" type="submit"> 
+        <input id="send" type="submit" value=""> 
     </form>    
 </body>
 </html>
