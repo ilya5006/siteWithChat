@@ -11,7 +11,7 @@
 </head>
 <body>
     <?
-        $query = "SELECT * FROM messagesall";
+        $query = "SELECT * FROM messagesall ORDER BY id_message DESC";
         $result = mysqli_query($link, $query);
 
         while ($info = mysqli_fetch_row($result)) //id text user role date
