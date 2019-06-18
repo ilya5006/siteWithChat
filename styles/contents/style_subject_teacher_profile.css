@@ -1,0 +1,58 @@
+#content .items hr
+{
+    width: 100%;
+    margin: 0 5px;
+
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background: #999;
+}
+
+.p-button a
+{
+    font-size: 26px;
+
+    display: block;
+
+    width: 100%;
+    padding: 16px;
+
+    transition: .2s linear;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 50px;
+
+    color: black;
+}
+
+.p-button
+{
+    width: 100%;
+
+    transition: .2s linear;
+}
+
+.p-button:hover
+{
+    font-size: 27px;
+
+    padding: 20px 0;
+
+    transition: .2s linear;
+
+    color: black;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,.5);
+}
+
+#content .items p
+{
+    margin: 0 auto;
+}
+
+#content .items
+{
+    margin-top: 50px;
+
+    background-color: white;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,.5);
+}

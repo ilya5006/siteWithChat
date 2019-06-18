@@ -1,0 +1,153 @@
+#enter
+{
+    font-size: 21px;
+
+    width: 80%;
+    height: 55px;
+
+    text-indent: 25px;
+
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#search
+{
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+
+    float: right;
+
+    width: 19%;
+    height: 55px;
+
+    transition: 0.2s linear;
+    text-align: center;
+
+    border: none;
+    background-color: white;
+}
+
+#search:hover
+{
+    cursor: pointer;
+    transition: 0.2s linear;
+
+    color: white;
+    background-color: black;
+}
+
+#content .search
+{
+    display: flex;
+
+    margin-bottom: 50px;
+
+    background-color: white;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#content .search input
+{
+    font-size: 26px;
+
+    display: inline-block;
+
+    width: 70%;
+    height: 50px;
+    margin: 5px 25px;
+    padding: 0 25px;
+
+    border: none;
+}
+
+.button
+{
+    font-size: 23px;
+
+    float: right;
+
+    width: 150px;
+    padding: 16px;
+
+    transition: 0.2s linear;
+    text-align: center;
+    text-decoration: none;
+
+    color: black;
+}
+
+.button:hover
+{
+    padding: 16px;
+
+    transition: 0.2s linear;
+
+    color: white;
+    background-color: black;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+}
+
+#content hr
+{
+    margin: 0 5px;
+
+    border: 0;
+    border-bottom: 1px solid #CCCCCC;
+    background: #999999;
+}
+
+#content .items
+{
+    background-color: white;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+}
+
+
+.p-button a
+{
+    font-size: 26px;
+
+    display: block;
+
+    padding: 16px;
+
+    transition: 0.2s linear;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 50px;
+
+    color: black;
+}
+
+.p-button
+{
+    transition: 0.2s linear;
+}
+
+.p-button:hover
+{
+    font-size: 27px;
+
+    padding: 20px 0;
+
+    transition: 0.2s linear;
+
+    color: black;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+}
+
+#content .items p
+{
+    margin: 0 auto;
+}
+
+.p-button span
+{
+    float: right;
+
+    margin: 0 15px;
+}

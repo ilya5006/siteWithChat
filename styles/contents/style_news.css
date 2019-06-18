@@ -1,0 +1,139 @@
+#news
+{
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px 50px;
+}
+
+#news .news_block
+{
+    position: relative;
+
+    margin: 2px 4px;
+    margin-bottom: 25px;
+    padding: 20px 40px;
+
+    background-color: white;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+}
+
+
+#news .c-h
+{
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 36px;
+
+    margin-bottom: 25px;
+}
+
+.pages
+{
+    display: flex;
+
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.pages a
+{
+    font-family: "Oswald", sans-serif;
+
+    float: right;
+
+    margin: 2px 4px;
+    padding: 15px 20px;
+
+    transition: 0.3s linear;
+    text-decoration: none;
+
+    color: black;
+    background-color: white;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+}
+.pages .active-pages, .pages a:hover
+{
+    font-weight: bold;
+
+    transition: 0.3s linear;
+
+    color: white;
+    background-color: black;
+}
+
+#news .c-text
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+
+    padding: 5px 5px 55px 0;
+}
+
+#news .c-text img
+{
+    float: left;
+
+    height: 250px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+}
+
+#news .с-link, .input-link, .p-link
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    text-align: center;
+
+    border: 0;
+    background-color: white;
+}
+
+#news .news-date
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin: 30px;
+}
+#news .с-link a, .input-link, .p-link
+{
+    float: right;
+
+    margin: 15px 0 0 15px;
+    padding: 15px 20px 15px 15px;
+
+    transition: 0.2s linear;
+    text-decoration: none;
+
+    color: black;
+}
+
+#news .с-link a:hover, .input-link:hover, .p-link:hover
+{
+    margin: 15px 0 0 15px;
+    padding: 15px 30px 15px 15px;
+
+    transition: 0.2s linear;
+
+    color: white;
+    background-color: black;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+}
+
+.input-link
+{
+    width: 100%;
+
+    opacity: 0;
+}

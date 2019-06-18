@@ -1,0 +1,68 @@
+#content
+{
+    height: 100%;
+}
+
+#content #profile
+{
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+#content #profile .p-background
+{
+    height: auto;
+
+    background-image: linear-gradient(45deg, #874DA2 0%, #C43A30 100%);
+}
+
+#content #profile .p-background .b-name
+{
+    font-size: 42px;
+
+    margin: 0 50px 0 50px;
+    padding: 25px;
+
+    color: white;
+}
+
+#content #profile .info-background
+{
+    height: 50%;
+
+    background-image: linear-gradient(to top, #E6E9F0 0%, #EEF1F5 100%);
+}
+
+#content #profile .info-background
+{
+    height: auto;
+    padding: 50px 50px 50px 50px;
+}
+
+#content #profile .info-background div
+{
+    padding: 50px;
+
+    background-color: white;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+}
+
+#content #profile .info-background p
+{
+    font-size: 26px;
+
+    display: inline-block;
+
+    width: 300px;
+}
+
+#content #profile .info-background hr
+{
+    width: 100%;
+    margin: 25px 5px;
+
+    border: 0;
+    border-bottom: 1px solid #CCCCCC;
+    background: #999999;
+}

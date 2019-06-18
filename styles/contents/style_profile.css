@@ -1,0 +1,118 @@
+#content #profile
+{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#content #profile .p-background .b-name
+{
+    font-size: 42px;
+
+    position: absolute;
+    bottom: 0;
+
+    margin: 50px 50px 50px 225px;
+
+    color: white;
+}
+
+#content #profile .p-background .b-info
+{
+    font-size: 26px;
+
+    position: absolute;
+    bottom: 0;
+
+    margin: 50px 50px 15px 225px;
+    padding: 0 5px;
+
+    color: white;
+}
+
+#content #profile img
+{
+    position: relative;
+    z-index: 10;
+
+    float: left;
+
+    width: 150px;
+    height: 150px;
+    margin: 100px 20px 0 50px;
+
+    border-radius: 5%;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+}
+
+#content #profile .info-background
+{
+    position: relative;
+
+    height: 50%;
+
+    background-image: linear-gradient(to top, #E6E9F0 0%, #EEF1F5 100%);
+}
+
+#content #profile .info-background
+{
+    height: auto;
+    margin: 0 0 50px 0;
+    padding: 50px 50px 50px 50px;
+}
+
+#content #profile .info-background .user-info, #content #profile .info-background .profile-info
+{
+    margin-top: 50px;
+    padding: 50px;
+
+    background-color: white;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+}
+
+#content #profile .info-background .user-info p, #content #profile .info-background .profile-info p
+{
+    font-size: 26px;
+
+    display: inline-block;
+
+    width: 300px;
+}
+
+#content #profile .info-background .user-info hr, #content #profile .info-background .profile-info hr
+{
+    width: 100%;
+    margin: 25px 5px;
+
+    border: 0;
+    border-bottom: 1px solid #CCCCCC;
+    background: #999999;
+}
+
+#content #profile .p-background
+{
+    position: relative;
+
+    height: 50%;
+
+    animation: anime 5s ease infinite;
+
+    background: linear-gradient(45deg, #874DA2 0%, #C43A30 100%);
+    background-size: 400% 400%;
+}
+
+@keyframes anime
+{
+    0%
+    {
+        background-position: 0 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0 50%;
+    }
+}

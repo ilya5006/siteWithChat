@@ -1,0 +1,106 @@
+#main-wrapper
+{
+    min-width: 800px;
+}
+
+@media screen and (max-width: 1210px)
+{
+    .hm-logo
+    {
+        width: 100%;
+    }
+
+    .hm-menu
+    {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 960px)
+{
+    .sb-name, .sb-role, .hm-logo h2
+    {
+        font-size: 16px !important;
+    }
+
+    .sb-profile img
+    {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .hm-login
+    {
+        margin: 0 auto;
+    }
+
+    .hm-menu
+    {
+        margin: 0 auto;
+    }
+    .hm-menu ul
+    {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav-menu ul li, #header-menu div, #header-menu div ul, #header-menu div ul li
+    {
+        flex-grow: 1;
+    }
+
+    #nav-menu ul
+    {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .с-link
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .sb-menu ul li a
+    {
+        font-size: 11px;
+    }
+
+    #wrapper-two
+    {
+        width: 90% !important;
+    }
+
+    #wrapper-one
+    {
+        width: 10% !important;
+        min-width: 80px !important;
+    }
+
+    .hm-logo, .sb-profile
+    {
+        display: none;
+    }
+
+    .hm-login
+    {
+        width: 100%;
+    }
+
+    .hm-menu
+    {
+        width: 100%;
+    }
+    .hm-menu li
+    {
+        width: 100%;
+    }
+
+    #nav-menu li
+    {
+        width: 100%;
+    }
+}

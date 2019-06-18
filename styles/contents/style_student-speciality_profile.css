@@ -1,0 +1,61 @@
+#content #profile .info-background .item-info
+{
+    padding: 50px;
+
+    background-color: white;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+}
+
+#content #profile .info-background p
+{
+    font-size: 26px;
+
+    display: inline-block;
+
+    width: 300px;
+}
+
+#content #profile .info-background .item-info hr
+{
+    width: 100%;
+    margin: 25px 5px;
+
+    border: 0;
+    border-bottom: 1px solid #CCCCCC;
+    background: #999999;
+}
+
+#content #profile .info-background .items hr
+{
+    width: 100%;
+    margin: 0 5px;
+
+    border: 0;
+    border-bottom: 1px solid #CCCCCC;
+    background: #999999;
+}
+
+.item-info
+{
+    margin-bottom: 50px;
+}
+
+.items
+{
+    padding: 0px;
+
+    background-color: white;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+}
+
+.text-p
+{
+    padding: 20px 0px;
+}
+
+.text-p:hover
+{
+    font-size: 27px;
+
+    padding: 23px 0px;
+}

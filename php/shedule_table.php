@@ -1,0 +1,220 @@
+<?
+$group_id = $_GET['id'];
+
+$result_group_info = mysqli_query($link, "SELECT groups.name FROM `groups` WHERE id_group = '$group_id'");
+$data_group_info = mysqli_fetch_row($result_group_info);
+$group = $data_group_info[0];
+
+
+if ($group == 3719)
+{ ?>
+<table border="1">
+    <tr>
+        <th></th>
+        <th>ПН<br></th>
+        <th>ВТ</th>
+        <th>СР</th>
+        <th>ЧТ</th>
+        <th>ПТ</th>
+        <th>СБ</th>
+    </tr>
+    <tr>
+        <td>9:00<br>10:35<br></td>
+        <td>zxvbz<br></td>
+        <td>wqer<br></td>
+        <td>sdf</td>
+        <td>МА2134sН</td>
+        <td>asdf</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>10:45<br>12:20<br></td>
+        <td>ФЫВАФЫВ</td>
+        <td>фывасм</td>
+        <td>МАААФТАН</td>
+        <td>пфывапйц</td>
+        <td>ыва</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>13:00<br>14:35<br></td>
+        <td>счмфыв</td>
+        <td>МфывафАН</td>
+        <td>цук</td>
+        <td>МфываТАН</td>
+        <td>ьтимсит</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>14:35<br>16:20</td>
+        <td>вапр</td>
+        <td>йцуке</td>
+        <td>кен</td>
+        <td>фыва</td>
+        <td>фыва</td>
+        <td></td>
+    </tr>
+</table>
+<?
+}
+else if ($group == 3857)
+{ 
+?>
+<table border="1">
+    <tr>
+        <th></th>
+        <th>ПН<br></th>
+        <th>ВТ</th>
+        <th>СР</th>
+        <th>ЧТ</th>
+        <th>ПТ</th>
+        <th>СБ</th>
+    </tr>
+    <tr>
+        <td>9:00<br>10:35<br></td>
+        <td>asdas<br></td>
+        <td>фыв<br></td>
+        <td>фыв</td>
+        <td>фыв</td>
+        <td>фыв</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>10:45<br>12:20<br></td>
+        <td>МяичиАТАН</td>
+        <td>чясм</td>
+        <td>фывфы</td>
+        <td>ыыы</td>
+        <td>МАыыАН</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>13:00<br>14:35<br></td>
+        <td>ыфва</td>
+        <td>МАыфваТАН</td>
+        <td>ыфва</td>
+        <td>фыва</td>
+        <td>фыва</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>14:35<br>16:20</td>
+        <td>рпо</td>
+        <td>впр</td>
+        <td>ячсм</td>
+        <td>фыва</td>
+        <td>МАТАН</td>
+        <td></td>
+    </tr>
+</table>
+<?
+}
+else if ($group == 3519)
+{ 
+?>
+<table border="1">
+    <tr>
+        <th></th>
+        <th>ПН<br></th>
+        <th>ВТ</th>
+        <th>СР</th>
+        <th>ЧТ</th>
+        <th>ПТ</th>
+        <th>СБ</th>
+    </tr>
+    <tr>
+        <td>9:00<br>10:35<br></td>
+        <td>asdas<br></td>
+        <td>ячс<br></td>
+        <td>1фыв</td>
+        <td>ячсм</td>
+        <td>фыв</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>10:45<br>12:20<br></td>
+        <td>фыва</td>
+        <td>ячсм</td>
+        <td>фыва</td>
+        <td>ячсм</td>
+        <td>ячсм</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>13:00<br>14:35<br></td>
+        <td>пфыв</td>
+        <td>фыва</td>
+        <td>ячсм</td>
+        <td>цук</td>
+        <td>фыва</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>14:35<br>16:20</td>
+        <td>фыва</td>
+        <td>ячсм</td>
+        <td>яцукчсм</td>
+        <td>цук</td>
+        <td>чс</td>
+        <td></td>
+    </tr>
+</table>
+<?
+}
+else if ($group == 3619)
+{ 
+?>
+<table border="1">
+    <tr>
+        <th></th>
+        <th>ПН<br></th>
+        <th>ВТ</th>
+        <th>СР</th>
+        <th>ЧТ</th>
+        <th>ПТ</th>
+        <th>СБ</th>
+    </tr>
+    <tr>
+        <td>9:00<br>10:35<br></td>
+        <td>ячсм<br></td>
+        <td>ыфва<br></td>
+        <td>ячсм</td>
+        <td>авпр</td>
+        <td>цуке</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>10:45<br>12:20<br></td>
+        <td>МяичиАТАН</td>
+        <td>смит</td>
+        <td>екнг</td>
+        <td>счмит</td>
+        <td>ывап</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>13:00<br>14:35<br></td>
+        <td>смит</td>
+        <td>фыва</td>
+        <td>кен</td>
+        <td>прол</td>
+        <td>цу</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>14:35<br>16:20</td>
+        <td>гш</td>
+        <td>пр</td>
+        <td>ывап</td>
+        <td>чсми</td>
+        <td>ыва</td>
+        <td></td>
+    </tr>
+</table>
+<?
+}
+else
+{
+    echo "<h1 style='font-size: 54px'> ВЫБЕРИТЕ ГРУППУ </h1>";
+}
+?>
